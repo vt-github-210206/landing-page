@@ -1,0 +1,121 @@
+h1 {
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+    align-items: center;
+    text-align: center;
+    grid-gap: 20px;
+    width: 100%;
+}/*faz com que o h1 se torne um grid para que se consiga colocar linhas ao lado*/
+
+body{
+    background: #4763c0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color: white;
+}
+
+h1:before,
+h1:after {
+    content: '';
+    border-top: 2px solid;
+}/*coloca linhas ao lado de h1*/
+
+.informacao {
+    width: 490px;
+    margin: auto;
+    border: 5px solid;
+    padding: 10px;
+    display: block;
+    background: #ffffffd2;
+}
+
+.informacao > p {
+    font-size: 25px;
+}
+/* Todo P dentro da classe informcao */
+
+.section {
+    width: 360px;
+    margin-top: 20px;
+    border: 5px solid;
+    border-radius: 10px;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    margin: 40px;
+    background: #ffffffd2;
+    font-size: 20px;
+}
+
+.section h2{
+    font-size: 30px;
+}
+.section p{
+    font-size: 30px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.section > *p {
+    font-size: large;
+}
+
+.entrada {
+    height: 20px;
+    width: auto;
+}
+
+.botao {
+    height: 30px;
+    width: 75px;
+    border: 2px solid;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
+.botao:hover {
+    color: white;
+    background-color: black;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+form > label{
+    font-size: 25px;
+}
+
+form > input{
+    font-size: 20px;
+}
+
+/* @media  (min-width: 768px) and (max-width: 1024px) {
+    section{
+        display: block;
+        justify-content: center;
+        gap: 32px;
+    }
+} */
+
+@media  (min-width: 768px) and (max-width: 1024px) {
+    section{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       margin-left: 160px;
+        gap: 32px;
+    }
+}
+
+
+
